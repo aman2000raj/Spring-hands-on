@@ -1,2 +1,12 @@
-package org.aman.shared;public class Utils {
+package org.aman.shared;
+
+import org.springframework.stereotype.Service;
+
+import java.util.UUID;
+
+@Service
+public class Utils {
+    public String generateUserId() {
+        return UUID.randomUUID().toString();
+    }
 }
